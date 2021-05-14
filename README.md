@@ -47,3 +47,22 @@ EMAIL       = "john@banana.com"
 infoheader = [PROJECTNAME, FILENAME, AUTHOR, LICENSE, DATE, true, RES0, ORG, RES1, PNUM, RES2, EMAIL]
 Mhead.header(infoheader)
 ```
+
+## Arguments of header(info, flag="noskip", fnum=nil)
+There are currently 5 different arguments in flag: 
+- **noskip** Chosen by default. Shows the "about" screen for 3 seconds.
+- **onboot** Displays information that is relevant for when the "about" screen is called at the beginning.
+- **glance** If fnum is defined in the function as its third argument, the dialog is dismissed after *fnum* seconds. Otherwise, it will wait 30 seconds.
+- **requirekey** Press any key to continue...
+- **verbose** Verbose for debug purposes.
+
+*fnum* represents an integer that could be used as a numeric constant to match with a *flag* argument.
+
+### Simple usage of the arguments
+```
+Mhead.header(infoheader, "noskip requirekey")
+```
+or
+```
+Mhead.header(infoheader, "glance", 45) # Waits for 45 seconds
+```
