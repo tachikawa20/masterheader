@@ -14,7 +14,7 @@ sudo gem install ./masterheader-0.0.1.gem
 ```
 
 ## How to use it
-```
+```ruby
 require "masterheader"
  
 PROJECTNAME = "Ruby test program"
@@ -29,7 +29,7 @@ Mhead.header(infoheader)
 
 or, for more arguments than the fixed ones that must appear by default,
 
-```
+```ruby
 #Reserved variables correspond to those on the left side of the created table. The maximum size is 16 characters to avoid ugliness.
 #Following variables correspond to those on the right side
 
@@ -63,10 +63,10 @@ There are currently 5 different arguments in flag:
 *fnum* represents an integer that could be used as a numeric constant to match with a *flag* argument.
 
 ### Simple usage of the arguments
-```
+```ruby
 Mhead.header(infoheader, "noskip requirekey")
 ```
 or
-```
+```ruby
 Mhead.header(infoheader, "glance", 45) # Waits for 45 seconds
 ```
