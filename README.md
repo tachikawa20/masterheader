@@ -6,6 +6,11 @@ It a fancy way to show important data. Why not?
 It's not a complicated library...
 
 ## Instalation
+### Quick Installation
+```
+gem install masterheader
+```
+### Manual Installation
 ```
 gem build masterheader.gemspec
 ```
