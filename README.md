@@ -1,8 +1,8 @@
 # masterheader
 A Ruby library that allows the creation of simple "about" sections for a script or program.
 
-## Why using it?
-It a fancy way to show important data. Why not?
+## Why bother using it?
+It a fancy way to show important data. Why not?  
 It's not a complicated library...
 
 ## Instalation
