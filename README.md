@@ -1,6 +1,10 @@
 # masterheader
 A Ruby library that allows the creation of simple "about" sections for a script or program.
 
+## Why using it?
+It a fancy way to show important data. Why not?
+It's not a complicated library...
+
 ## Instalation
 ```
 gem build masterheader.gemspec
@@ -26,7 +30,7 @@ Mhead.header(infoheader)
 or, for more arguments than the fixed ones that must appear by default,
 
 ```
-#Reserved variables correspond to those on the left side of the created table
+#Reserved variables correspond to those on the left side of the created table. The maximum size is 16 characters to avoid ugliness.
 #Following variables correspond to those on the right side
 
 require "masterheader"
@@ -41,7 +45,7 @@ RES0        = "Organization"           #RES0 for "Reserved 0"
 ORG         = "Apple Company 123"
 RES1        = "Phone Number"           #RES1 for "Reserved 1"
 PNUM        = "123-123-1234"
-RES2        = "Email"
+RES2        = "Email"                  
 EMAIL       = "john@banana.com"
 
 infoheader = [PROJECTNAME, FILENAME, AUTHOR, LICENSE, DATE, true, RES0, ORG, RES1, PNUM, RES2, EMAIL]
